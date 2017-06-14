@@ -1,75 +1,182 @@
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-header {
-  heigth: 60px;
+header{
+  height: 60px;
   border-bottom: 1px solid grey;
 }
 
-.logo {
-  float: left;
-  padding: 5px 5px;
-}
-
-.buttons {
-  text-align: right;
-}
-
 .btn-default {
-border: 2px solid grey;
-padding: 5px 15px;
-text-decoration: none;
-color: black;
-border-radius: 5px;
+  background-color: #3897f0;
+  color: white;
+  border-color: #3897f0;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  height: 18px;
+}
+.btn-default1 {
+  background-color: #3897f0;
+  color: white;
+  border-color: #3897f0;
+  padding: 7px 55px;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  height: 25px;
+
 }
 
 .btn-default:hover {
-  border-width: 2px
+  border-width: 2px;
+}
+
+.profile
+{
+  display: flex;
+
+}
+
+.image
+{
+  text-align: center;
+  width: 30%;
+}
+
+.image img {
+  width: 150px;
+  height: 150px;
+  padding-left: 15px;
+  border-radius: 50%;
+}
+
+.method
+{
+  margin: 10px;
+  font-size: 32px;
+  line-height: 40px;
+    font-weight: 200;
+}
+
+.img1
+{
+  width: 60%;
+  display: block;
+}
+
+.img2
+{
+  display: flex;
+}
+
+.logo
+{
+  float: left;
+}
+.buttons {
+
+  text-align: right;
+  border: 1px white;
+}
+
+main{
+    background-color: #f2f2f2;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  max-width:1000px;
+  margin: 0 auto;
 }
 
 .row {
   display: flex;
 }
 
+.row1 {
+  display: flex;
+  font-size: 12px;
+}
+
 .col {
   flex: 1;
   margin: 15px;
   position: relative;
+
 }
 
-.col img {
+.col1 {
+  flex: 1;
+  margin: 10px;
+  position: relative;
+
+}
+
+footer{
+    background-color: #f2f2f2;
+    color: #003569;
+}
+
+.insta
+{
+      font-size: 12px;
+      color: #999;
+      text-align: right;
+}
+
+.col img{
   max-width: 100%;
   width: 100%;
-  height: 100%;
-  /*order: 1px solid black;*/
+  border: 1px solid black;
 }
 
-@media screen and (max-width: 500px) {
-  .row {
+.bio1
+{
+  display: inline;
+}
+
+.loadMore
+{
+  text-align: center;
+}
+
+.biography
+{
+  flex: 1;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  //margin: 60px 80px;
+}
+
+@media screen and ( max-width: 400px) {
+  .row{
     display: block;
   }
-  .col {
+  .col{
     padding: 0;
   }
 }
+/* http://placehold.it/400x400 */
 
-.overlay {
+.overlay{
   width: 100%;
   height: 100%;
   background: rgba(255, 0, 0, 0.5);
   position: absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   opacity: 0;
 }
-
-.col:hover .overlay {
-  transition: 3.5s;
+.col:hover .overlay
+{
+  transition: 2.5s;
   opacity: 1;
 }
+
 
 Add Comment Collapse
